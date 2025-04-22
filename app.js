@@ -11,7 +11,6 @@ for(let select of dropdowns)
 {
   for(let currcode in countryList)
   {
-
     let newOption = document.createElement("option");
     newOption.innerText = currcode;
     newOption.value = currcode;
@@ -22,9 +21,9 @@ for(let select of dropdowns)
       newOption.selected ="selected";
     }
     else if(select.name=="to" && currcode=="INR")
-   {
+    {
      newOption.selected ="selected";
-  }
+    }
   }
 
   select.addEventListener("change",(e)=>{
